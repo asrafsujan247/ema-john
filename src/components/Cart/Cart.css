@@ -1,0 +1,22 @@
+.cart {
+  background-color: #ff99004d;
+  padding: 25px;
+}
+
+.cart-header {
+  text-align: center;
+}
+
+.cart-header h4 {
+  margin-top: 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.grandTotal {
+  font-size: 20px;
+  margin-top: 25px;
+}
