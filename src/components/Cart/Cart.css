@@ -1,6 +1,8 @@
 .cart {
   background-color: #ff99004d;
   padding: 25px;
+  position: sticky;
+  top: 0;
 }
 
 .cart-header {
@@ -19,4 +21,9 @@
 .grandTotal {
   font-size: 20px;
   margin-top: 25px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
 }
