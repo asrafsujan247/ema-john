@@ -27,3 +27,16 @@
   line-height: 25px;
   letter-spacing: 0.0015em;
 }
+
+.btn-clear-cart {
+  margin: 10px auto;
+  background-color: #ff3030;
+  border-radius: 4px;
+  color: white;
+  width: 90%;
+  height: 50px;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
