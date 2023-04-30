@@ -1,0 +1,17 @@
+.form-container {
+  width: 500px;
+  height: 600px;
+  margin: 20px auto;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+}
+
+.form-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.0025em;
+  color: #2a414f;
+}
