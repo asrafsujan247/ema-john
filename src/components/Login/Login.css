@@ -1,7 +1,7 @@
 .form-container {
   width: 500px;
   height: 600px;
-  margin: 30px auto;
+  margin: 40px auto;
   border: 1px solid #95a0a7;
   border-radius: 8px;
   padding-left: 40px;
@@ -47,7 +47,7 @@
   background: rgba(255, 153, 0, 0.3);
   border-radius: 5px;
   border: none;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 21px;
   line-height: 25px;
   letter-spacing: 0.0015em;
@@ -56,4 +56,12 @@
 
 .btn-submit:hover {
   background: rgba(255, 153, 0, 0.6);
+}
+
+.toggle-login-signUp {
+  text-align: center;
+}
+
+.toggle-link {
+  color: #ff9900;
 }
