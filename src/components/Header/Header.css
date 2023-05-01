@@ -24,3 +24,10 @@ nav.header a:hover {
 .btn-signOut {
   margin-left: 8px;
 }
+
+.loading-text {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(245, 159, 83);
+  font-size: 18px;
+}
