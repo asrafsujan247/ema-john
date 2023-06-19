@@ -16,7 +16,7 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("products.json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -25,7 +25,7 @@ const Shop = () => {
     const storedData = getShoppingCart();
     const savedCart = [];
     for (const id in storedData) {
-      const addedProduct = products.find((product) => product.id === id);
+      const addedProduct = products.find((product) => product._id === id);
       if (addedProduct) {
         const quantity = storedData[id];
         addedProduct.quantity = quantity;
@@ -37,18 +37,18 @@ const Shop = () => {
 
   const handleAddToCart = (product) => {
     let newCart = [];
-    const exists = cart.find((pd) => pd.id === product.id);
+    const exists = cart.find((pd) => pd._id === product._id);
     if (!exists) {
       product.quantity = 1;
       newCart = [...cart, product];
     } else {
       exists.quantity = exists.quantity + 1;
-      const remaining = cart.filter((pd) => pd.id !== product.id);
+      const remaining = cart.filter((pd) => pd._id !== product._id);
       newCart = [...remaining, exists];
     }
 
     setCart(newCart);
-    addToDb(product.id);
+    addToDb(product._id);
   };
 
   const handleClearCart = () => {
@@ -62,7 +62,7 @@ const Shop = () => {
         {products.map((product) => (
           <Product
             product={product}
-            key={product.id}
+            key={product._id}
             handleAddToCart={handleAddToCart}
           ></Product>
         ))}
